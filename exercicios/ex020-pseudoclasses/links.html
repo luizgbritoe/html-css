@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a{
+            color: orange;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: red;
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+        
+        .importante{
+            background-color: rgb(255, 186, 186);
+        }
+
+        a:active{
+            color: green;
+        }        
+
+        .importante::before{
+            content:  '⇒ ';
+        }
+
+        .importante::after {
+            content: ' ⇐';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.tiktok.com/@britowxyz?lang=en" target="_blank" rel="external">Tiktok</a></li>
+        <li><a href="https://www.instagram.com/luiz.britoe/" target="_blank" rel="external" class="importante">Instagram</a></li>
+        <li><a href="https://x.com/brito99k" target="_blank" rel="external">Twitter</a></li>
+    </ul>
+</body>
+</html>
