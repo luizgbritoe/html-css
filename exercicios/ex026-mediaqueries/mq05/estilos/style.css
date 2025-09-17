@@ -28,6 +28,11 @@ menu a {
     border-radius: 10px;
 }
 
+menu li {
+    list-style-type: none;
+    display: inline;
+}
+
 a:hover {
     background-color: lightgray;
     transition: 0.2s;
@@ -45,10 +50,10 @@ main {
     margin: auto;
 }
 
-main h1 {
+main article h1 {
     margin-bottom: 10px;
 }
 
-main p {
+main article p {
     text-indent: 20px;
 }
