@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscrição - InterPJ</title>
-    <style>
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Formulário de Inscrição - InterPJ</h1>
@@ -20,8 +16,41 @@
                 <input type="text" name="nome" id="inome" required autocomplete="on">
             </p>
             <p>
-                <label for="iidade">Idade: </label>
-                <input type="number" name="idade" id="iidade" required>
+                <label for="iteleffone">Telefone: </label>
+                <input type="tel" name="telefone" id="itelefone">
+            </p>
+            <p>
+                <label for="iturma">Turma: </label>
+                <select name="turma" id="iturma">
+                    <option value="1adma">1° ADM A</option>
+                    <option value="2adma">2° ADM A</option>
+                    <option value="3adma">3° ADM A</option>
+                    <option value="1dsa">1° DS A</option>
+                    <option value="2dsa">2° DS A</option>
+                    <option value="3dsa">3° DS A</option>
+                    <option value="1rha">1° RH A</option>
+                    <option value="2rha">2° RH A</option>
+                    <option value="1rha">3° RH A</option>
+                    <option value="1dga">1° DG A</option>
+                    <option value="1jda">1° JD A</option>
+                </select>
+            </p>
+            <p>
+                <label for="irm">RM: </label>
+                <input type="number" name="rm" id="irm" required minlength="5" maxlength="5">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Modalidade</legend>
+            <p>
+                <label for="iesporte">Esporte: </label>
+                <select name="esporte" id="iesporte">
+                    <option value="futebol">Futebol</option>
+                    <option value="volei">Vôlei</option>
+                    <option value="basquete">Basquete</option>
+                    <option value="truco">Truvco</option>
+                    <option value="pingpong">Ping Pong</option>
+                </select>
             </p>
         </fieldset>
     </form>
