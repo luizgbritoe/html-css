@@ -6,54 +6,58 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: gray;
+
+html, body {
+    background: lightgray;
 }
 
 header {
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 10px;
+    background-color: rgb(141, 141, 141);
 }
 
 header h1 {
-    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
 }
 
-menu a {
-    text-decoration: none;
-    color: white;
-    background-color: rgb(82, 82, 82);
-    padding: 5px;
-    border-radius: 10px;
+header menu {
+    display: block;
 }
 
-menu li {
+menu ul {
     list-style-type: none;
-    display: inline;
 }
 
-a:hover {
-    background-color: lightgray;
-    transition: 0.2s;
+menu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    border-top: 1px solid gray;
 }
 
-body {
-    background: rgb(209, 209, 209);
+menu ul li a:hover {
+    background-color: gray;
+    transition: 0.3s;
 }
 
 main {
+    width: 90vw;
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
-    max-width: 700px;
     margin: auto;
+    margin-top: 10px;
+    padding: 10px;
 }
 
-main article h1 {
-    margin-bottom: 10px;
+main article h2 {
+    padding-bottom: 10px;
 }
 
 main article p {
+    text-align: justify;
+    margin-bottom: 10px;
     text-indent: 20px;
 }
