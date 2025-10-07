@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+div.container {
+    background-color: darkblue;
+    display: flex;
+}
+
+div.item {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    text-align: center;
+    flex: auto;
+}
