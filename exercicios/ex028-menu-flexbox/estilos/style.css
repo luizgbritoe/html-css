@@ -27,6 +27,10 @@ header h1 {
     text-shadow: 1px 1px 1px black;
 }
 
+header span#menu {
+    display: none;
+}
+
 header nav {
     display: flex;
     gap: 8px;
@@ -49,10 +53,15 @@ header nav a:hover {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+}
+
+main section {
     background-color: white;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    max-width: 1300px;
+    max-width: 1000px;
 }
