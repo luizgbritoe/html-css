@@ -16,11 +16,21 @@ body {
 header {
     background-color: gray;
     padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     color: white;
     text-shadow: 1px 1px 1px black;
+}
+
+header nav {
+    display: flex;
+    gap: 8px;
+    flex-flow: row wrap;
 }
 
 header nav a {
@@ -29,6 +39,7 @@ header nav a {
     padding: 10px;
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 header nav a:hover {
