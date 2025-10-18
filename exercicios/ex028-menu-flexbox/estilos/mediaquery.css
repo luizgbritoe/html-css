@@ -3,7 +3,7 @@
 @media screen and (max-width: 700px) {
     header span#menu {
         display: block;
-        width: 100vw;
+        width: 98vw;
         padding: 5px;
         text-align: center;
         background-color: black;
@@ -27,7 +27,7 @@
     }
 
     header nav a {
-        width: 100vw;
+        width: 96vw;
         border-radius: 0px;
         border: 1px solid rgb(46, 46, 46);
     }
