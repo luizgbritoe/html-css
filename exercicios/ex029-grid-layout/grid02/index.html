@@ -11,12 +11,10 @@
         padding: 5px;
 
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template: repeat(3, auto) / repeat(3, auto);
         gap: 5px;
-        align-items: normal;
-        justify-items: normal;
-        align-content: normal;
-        justify-content: normal;
+        place-items: normal normal;
+        place-content: normal normal;
       }
 
       div.item {
