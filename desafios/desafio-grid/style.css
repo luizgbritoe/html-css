@@ -1,38 +1,44 @@
 @charset "UTF-8";
 
-div {
-    text-align: center;
-    padding: 5px;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 div.container {
     display: grid;
-    grid-template: 2fr 1fr 6fr 1fr / 1fr 2fr 1fr;
+    grid-template: 2fr 1fr 6fr 1fr / 3fr 1fr;
     gap: 5px;
-    padding: 0px;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
 }
 
-div.container div.topo {
+.caixa {
+    text-align: center;
+    padding: 5px;
+    background-color: darkorange;
+    border: 1px solid black;
+}
+
+div.container header#topo {
     grid-area: 1 / 1 / 2 / -1;
-    background-color: yellow;
 }
 
-div.container div.menu {
+div.container nav#menu {
     grid-area: 2 / 1 / 3 / -1;
-    background-color: yellow;
 }
 
-div.container div.principal {
-    grid-area: 3 / 1 / 4 / 3;
-    background-color: yellow;
+div.container main#principal {
+    grid-area: 3 / 1 / 4 / 2;
 }
 
-div.container div.secundario {
-    grid-area: 3 / 3 / 4 / -1;
-    background-color: yellow;
+div.container aside#secundario {
+    grid-area: 3 / 2 / 4 / -1;
 }
 
-div.container div.rodape {
+div.container footer#rodape {
     grid-area: 4 / 1 / -1 / -1;
-    background-color: yellow;
 }
